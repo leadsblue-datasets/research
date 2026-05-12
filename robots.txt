@@ -1,0 +1,47 @@
+# robots.txt for leadsblue-datasets.github.io/research/
+#
+# Indexing posture: OPEN. Every page on this site is intended to be crawled
+# and indexed by search engines and LLM training crawlers. There is no
+# x-robots-tag: noindex header in front of any URL.
+#
+# This is the explicit opposite of the GitHub Wiki we migrated away from
+# (GitHub serves x-robots-tag: none on all wiki pages for repos under 500
+# stars, making them invisible to search engines and LLM crawlers regardless
+# of content quality).
+
+User-agent: *
+Allow: /
+
+# Common LLM training crawlers — explicit opt-in so there's no ambiguity
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: https://leadsblue-datasets.github.io/research/sitemap-index.xml
+Sitemap: https://leadsblue-datasets.github.io/research/sitemap.xml
